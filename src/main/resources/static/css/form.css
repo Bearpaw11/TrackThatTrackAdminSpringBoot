@@ -1,0 +1,50 @@
+.navClass {
+  background-color:rgba(34, 34, 34, 0.3);
+  border-bottom: 2px solid red;
+  color: white;
+}
+
+li a{
+  color: white !important;
+  font-weight:600 !important;
+}
+
+
+html {
+  background-color:rgba(34, 34, 34, 0.6);
+  width: 100vw;
+  height: 100vh;
+}
+
+
+
+
+.pageBackground{
+  background-color:rgba(34, 34, 34, 0.6);
+  width: 100vw;
+  height: 100vh;
+}
+
+h1{
+	color: white;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom:20px;
+}
+
+.formCard{
+  margin: auto;
+  width: 40%;
+  color: white;
+  padding-bottom: 20px; 
+  border: 2px solid white;
+  border-radius: 25px;
+  padding-left: 20px;
+  padding-right: 20px; 
+}
+
+.needMargin{
+   
+    height: 10vh;
+}
+

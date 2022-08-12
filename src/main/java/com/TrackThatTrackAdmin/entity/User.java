@@ -14,8 +14,6 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 
-
-
 @Entity
 @Table(name="users")
 public class User {
@@ -35,10 +33,21 @@ public class User {
 	private String userName;
 	
 	@OneToMany(fetch=FetchType.LAZY, cascade=CascadeType.ALL, mappedBy="user")
+	private List<UserRecord> userRecords = new ArrayList<>();
 	
+	@OneToMany(fetch=FetchType.LAZY, cascade=CascadeType.ALL, mappedBy="user")
+	private List<UserWishRecord> userWishRecords = new ArrayList<>();
 
 	
-	private List<UserRecord> userRecords = new ArrayList<>();
+	public List<UserWishRecord> getUserWishRecords() {
+		return userWishRecords;
+	}
+
+
+	public void setUserWishRecords(List<UserWishRecord> userWishRecords) {
+		this.userWishRecords = userWishRecords;
+	}
+
 	//empty constructor
 	public User() {
 		
