@@ -6,6 +6,7 @@ import com.TrackThatTrackAdmin.entity.User;
 
 public interface UserService {
 
+	//Crud Methods used by UserServiceImpl
 	public List<User> findAll();
 	
 	public User findById(int theId);

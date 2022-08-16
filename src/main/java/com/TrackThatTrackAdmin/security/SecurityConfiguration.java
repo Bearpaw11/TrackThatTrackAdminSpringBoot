@@ -43,7 +43,8 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         .defaultSuccessUrl("/user/list")
         .permitAll();
   }
-//this allows access to the resources and static folders
+  
+//this allows access to the resources and static folders for css,js, img and icon
   @Override
   public void configure(WebSecurity web) throws Exception {
       web

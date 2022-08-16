@@ -12,7 +12,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+//This is the class used to define the User blueprint
 
+//Entity will specify that this is a entity and is mapped to a database table
 
 @Entity
 @Table(name="users")
@@ -32,6 +34,8 @@ public class User {
 	@Column(name="user_name")
 	private String userName;
 	
+	
+	//defining the relationship with other tables
 	@OneToMany(fetch=FetchType.LAZY, cascade=CascadeType.ALL, mappedBy="user")
 	private List<UserRecord> userRecords = new ArrayList<>();
 	
